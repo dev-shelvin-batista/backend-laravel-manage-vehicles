@@ -8,8 +8,8 @@ use App\Models\Status;
 class StatusController extends Controller
 {
     /**
-   * Obtener los todos datos de los estados de usuarios
-   * @return Object Listado de todos los estados de usuarios registrados
+   * Get all user status data
+   * @return Object List of all statuses of registered users
    */
   public function index(){
     $status = Status::all();
