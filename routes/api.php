@@ -19,15 +19,15 @@ use App\Http\Controllers\BodyCarController;
 |
 */
 
-/*Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
-    return $request->user();
-});*/
+Route::middleware(['validate_user'])->group(function () {
+    Route::post('/vehicle', [VehicleController::class, 'register']);
+    Route::get('/status/list', [StatusController::class, 'index']);
+    Route::get('/settings/list', [SettingsController::class, 'index']);
+    Route::get('/bodycar/list', [BodyCarController::class, 'index']);
+});
 
 Route::get('/user/{id}', [UserController::class, 'index']);
 Route::post('/user', [UserController::class, 'register']);
 Route::post('/login', [UserController::class, 'authenticate']);
 Route::put('/user/{id}', [UserController::class, 'update']);
-Route::post('/vehicle', [VehicleController::class, 'register']);
-Route::get('/status/list', [StatusController::class, 'index']);
-Route::get('/settings/list', [SettingsController::class, 'index']);
-Route::get('/bodycar/list', [BodyCarController::class, 'index']);
+
