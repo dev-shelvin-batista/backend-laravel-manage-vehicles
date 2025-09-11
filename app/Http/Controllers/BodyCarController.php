@@ -8,8 +8,8 @@ use App\Models\BodyCar;
 class BodyCarController extends Controller
 {
     /**
-     * Obtener los todos datos de las carrocerias de los vehiculos
-     * @return Object Listado de todas las carrocerias de los vehiculos
+     * Obtain all data on vehicle bodies.
+     * @return Object List of all vehicle body types
      */
     public function index(){
         $body_car = BodyCar::all();

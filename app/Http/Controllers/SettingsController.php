@@ -8,8 +8,8 @@ use App\Models\Settings;
 class SettingsController extends Controller
 {
     /**
-     * Obtener los todos datos de las configuraciones de los vehiculos
-     * @return Object Listado de todas las configuraciones de los vehiculos
+     * Obtain all vehicle configuration data.
+     * @return Object List of all vehicle configurations
      */
     public function index(){
         $settings = Settings::all();
