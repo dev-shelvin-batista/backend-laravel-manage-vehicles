@@ -100,7 +100,8 @@ class UserController extends Controller
       if ($validator->fails()) {
         return response()->json($validator->messages(), 401);
       }
-      $generate_password =  uniqid();
+      // $generate_password =  uniqid();
+      $generate_password =  "1234";
       Log::info("Password: " . $generate_password);
 
       // Send email with temporary password

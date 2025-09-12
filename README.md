@@ -1,5 +1,5 @@
 # Project details
-This project functions as a backend project developed in Laravel with a PostgreSQL database to generate REST API services that are used by a project developed in Ionic Angular. It also allows images to be stored on the server using base64-encoded images. [Frontend](https://github.com/dev-shelvin-batista/frontend-ionic-manage-vehicle)
+This project functions as a backend project developed in Laravel with a PostgreSQL database to generate REST API services that are used by a project developed in Ionic Angular. It also allows images to be stored on the server using base64-encoded images and performs a login that generates a token to validate REST API services. [Frontend](https://github.com/dev-shelvin-batista/frontend-ionic-manage-vehicle)
 
 | |Version |
 |----------------|-------------------------------|
